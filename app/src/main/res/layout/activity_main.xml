@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:orientation="vertical"
+    >
+
+    <TableRow
+        android:layout_height="50dp"
+        android:paddingTop="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textYTB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:text="YouTube"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center">
+
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+        </View>
+
+        <ImageButton
+            android:id="@+id/bell"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/bell"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search1"
+            android:scaleType="fitCenter"
+            android:gravity="center"/>
+        <ImageButton
+            android:id="@+id/avt"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/avt"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            />
+    </TableRow>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Explore"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="All"
+                android:backgroundTint="#5E5E5E"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cooking"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nature"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Music"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gaming"
+                android:backgroundTint="#E4E4E4"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/poster2"
+                    android:layout_weight="4"/>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:collapseColumns="9">
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/avtUser1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/logo"
+                            android:scaleType="fitCenter"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="6"
+                            android:gravity="start"
+                            android:text="Muộn rồi mà sao còn"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <ImageButton
+                            android:id="@+id/bell"
+                            android:background="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/configuration"
+                            android:scaleType="fitCenter"
+                            android:gravity="top"
+                            />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/poster3"
+                    android:layout_weight="4"/>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:collapseColumns="9">
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/avtUser1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/logo"
+                            android:scaleType="fitCenter"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="6"
+                            android:gravity="start"
+                            android:text="Lập trình cho người mới bắt đầu"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <ImageButton
+                            android:id="@+id/bell"
+                            android:background="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/configuration"
+                            android:scaleType="fitCenter"
+                            android:gravity="top"
+                            />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/poster4"
+                    android:layout_weight="4"/>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:collapseColumns="9">
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/avtUser1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/logo"
+                            android:scaleType="fitCenter"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="6"
+                            android:gravity="start"
+                            android:text="Bố già"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <ImageButton
+                            android:id="@+id/bell"
+                            android:background="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/configuration"
+                            android:scaleType="fitCenter"
+                            android:gravity="top"
+                            />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/poster1"
+                    android:layout_weight="4"/>
+                <TableLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:collapseColumns="9">
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/avtUser1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/logo"
+                            android:scaleType="fitCenter"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="6"
+                            android:gravity="start"
+                            android:text="Avenger"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+                        <ImageButton
+                            android:id="@+id/bell"
+                            android:background="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/configuration"
+                            android:scaleType="fitCenter"
+                            android:gravity="top"
+                            />
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</TableLayout>
